@@ -1,5 +1,5 @@
 % Determina la interseccioon L de los planos z - y = 1 y z - y = -1. ¿La 
-% interseccion esta contenida en el plano del infinito? ¿Por qué? ¿Còmo son 
+% interseccion esta contenida en el plano del infinito? ¿Por qué? ¿Cómo son 
 % las coordenadas de los puntos de la recta L?
 
 clf;
@@ -10,8 +10,8 @@ v2 = [0, -1, 1, 1];
 
 PInf = [1, 1, 1, 0];
 
-L1 = MultiplicarVectores(v1, v2);
-L2 = MultiplicarVectores(v2, v1);
+L1 = MultiplicarVectores(v1, v2)
+L2 = MultiplicarVectores(v2, v1)
 
 Lt = L1 - L2;
 
@@ -25,3 +25,6 @@ P = m * PInf'
 
 
 % P = (0, 0, 0, 0) porque el la recta esta incluida en el plano del infinito
+
+
+% La última coordenada vale 0

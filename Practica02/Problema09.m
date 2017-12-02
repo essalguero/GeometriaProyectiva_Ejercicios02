@@ -1,4 +1,4 @@
-%Considera una c´amara situada en posicion estandar, mirando en diraccion 
+ %Considera una c´amara situada en posicion estandar, mirando en diraccion 
 %al eje z (positivo) y con la pantalla a una distancia igual a 2. Supongamos 
 %ademas que de la pantalla solamente podemos ver a traves del cuadrado 
 %formado por vertices (1, 1), (-1, 1), (-1, -1) y (1, -1).
@@ -35,3 +35,4 @@ PInterseccion3 = PInterseccion3 / PInterseccion3(4)
 ML4 = MultiplicarVectores(P0, P4) - MultiplicarVectores(P4, P0);
 PInterseccion4 = ML4 * Plano';
 PInterseccion4 = PInterseccion4 / PInterseccion4(4)
+

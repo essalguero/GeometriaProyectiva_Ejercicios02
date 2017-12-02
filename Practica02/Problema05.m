@@ -26,3 +26,5 @@ mLInv = ObtenerMatrizPlucker(LInv)
 vectorPlano = mLInv * [P3, 1]';
 vectorPlano = vectorPlano / 4
 
+
+% Plano: 10x + 16y + 1z - 25

@@ -26,3 +26,5 @@ MLrecta = MultiplicarVectores([P2, 1], [P3, 1]) - MultiplicarVectores([P3, 1], [
 Punto = MLrecta * Plano;
 
 Punto = Punto / 2
+
+% Punto (1/7, -3/7, -10/7, 1)

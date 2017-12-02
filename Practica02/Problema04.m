@@ -7,6 +7,8 @@ PlanoInf = [1 1 1 0];
 
 MLInv = MultiplicarVectores(v1, PlanoInf) - MultiplicarVectores(PlanoInf, v1)
 
-r = ObtenerMatrizPlucker(InvertirPlucker(ObtenerPlucker(MLInv))) * PlanoInf'
+L = ObtenerPlucker(MLInv)
+
+r = ObtenerMatrizPlucker(InvertirPlucker(L)) * PlanoInf'
 
 % r = (0, 0, 0, 0) Porque esta contenida en el plano del infinito
