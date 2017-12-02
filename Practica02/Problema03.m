@@ -5,12 +5,23 @@
 clf;
 clear;
 
-v1 = [0, -1, 1, -1]
-v2 = [0, -1, 1, 1]
+v1 = [0, -1, 1, -1];
+v2 = [0, -1, 1, 1];
 
-L1 = v1.*v2'
-L2 = v2.*v1'
+PInf = [1, 1, 1, 0];
 
-Lt = L1 - L2
+L1 = MultiplicarVectores(v1, v2);
+L2 = MultiplicarVectores(v2, v1);
 
-L = [Lt(1, 2), Lt(1, 3) Lt(1, 4), Lt(2, 3), Lt(4, 2), Lt(4, 2)]
+Lt = L1 - L2;
+
+LInv = [Lt(1, 2), Lt(1, 3) Lt(1, 4), Lt(2, 3), Lt(4, 2), Lt(4, 2)]
+
+%L* pertenece al plano del infinito
+
+m = ObtenerMatrizPlucker(LInv);
+
+P = m * PInf'
+
+
+% P = (0, 0, 0, 0) porque el la recta esta incluida en el plano del infinito

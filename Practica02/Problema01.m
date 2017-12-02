@@ -9,3 +9,4 @@ v2 = [3, -2, -2];
 
 result = cross(v2, v1)
 
+% result = 6   9   0 -> se cortan en el infinito
